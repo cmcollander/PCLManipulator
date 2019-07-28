@@ -5,6 +5,29 @@ This design was created for my PhD research in 3D Point Cloud Analysis. Fusion 3
 
 A camera in space, for the purposes of observing an object, would need 6DoF (3 for pose, 3 for orientation). For this project, 6DoF would be an unnecesary amount of time, labor, and data. By making the rule that the camera will always face a central origin of the object, we immediately eliminate 3Dof. We can eliminate another by converting to spherical coordinates and constraining the camera to always be a specific distance away from the object. In this final 2DoF representation, we can call the two axes Yaw and Pitch.
 
+## License
+MIT License
+
+Copyright (c) 2019 Chris Collander
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
 ## Software
 
 The software is made for a Linux system with the point cloud library (PCL), Realsense SDK 2.0, and Dynamixel SDK installed. Before compilation, you will need to adjust the CMakeLists.txt file to point to your local libraries, as well as adjust the file storage location in main.cpp. This was compiled in Ubuntu 16.04 but I see no reason that it won't work in other Linux distributions as long as the correct libraries are installed and located by CMake.
