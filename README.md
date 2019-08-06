@@ -42,8 +42,33 @@ In the future I hope to release code that will fully rotate the object, obtain a
 
 Currently, I will only be releasing the STL files and DXF files for construction, but after I clean up and merge the Fusion 360 projects, I will post those files as well.
 
-For 3D Printing, a Prusa i3 mk3s was used for the pieces, with some pieces being printed in PETG and others in PLA. As relatively little stress will be placed on the pieces, the actual plastic doesn't matter. The only piece that should be printed with high detail is the carbon fiber mount. Ensure the carbon fiber rod does not move in the mount and the mount is secure on the motor with no wiggle room. As the standoffs needed to be specific heights to allow the camera to be facing directly at the origin, these were 3D printed in high quality. If you can find another way to securely ensure the height of each layer, feel free to go that route. This just worked well for us. We even 3D printed the nuts and bolts, but I do admit this is unnecessary considering we could have just made a trip to the hardware store.
+For 3D Printing, a Prusa i3 mk3s was used for the pieces, with some pieces being printed in PETG and others in PLA. As relatively little stress will be placed on the pieces, the actual plastic doesn't matter. The only piece that should be printed with high detail is the carbon fiber mount. Ensure the carbon fiber rod does not move in the mount and the mount is secure on the motor with no wiggle room. As the standoffs needed to be specific heights to allow the camera to be facing directly at the origin, these were 3D printed in high quality. If you can find another way to securely ensure the height of each layer, feel free to go that route. This just worked well for us. We even 3D printed the nuts for the standoffs, but I do admit this is unnecessary considering we could have just made a trip to the hardware store. I've included the STL file for them anyways, in case anybody wants to take the same route.
 
 For laser cutting, a Full Spectrum Laser 20x12 Hobby lasercutter was used with RetinaEngrave and CorelDraw. The pieces were all constructed to fit within the bounds of the lasercutter. 3mm baltic birch was used, but if the parameter in Fusion360 for material thickness is changed, there is no reason that a different size of material wouldn't work. For the manipulator itself, simple wood glue and clamps were used for adhesion.
 
-Let me know if you have any questions. I don't know how many adjustments or changes I'd be willing my make to the model, as it suits my needs in the current form, but if you have any feel free to create a pull request and we can change it!
+### Building
+
+To build the manipulator you need to lasercut the following files in 3mm wood
+2x BasePlateVector.dxf
+2x BaseSupportVector.dxf
+2x PitchPlateVector.dxf
+2x PitchSupportVector.dxf
+2x YawPlateVector.dxf
+2x YawSupportVector.dxf
+2x Platform1Vector.dxf
+2x Platform2Vector.dxf
+
+The following pieces should be 3D printed
+1x CameraSupport.stl
+1x CarbonFiberMotorMount.stl
+14x Standoff.stl
+7x Nut.stl (optional)
+
+The following pieces should be purchased
+1x Realsense D4xx Camera
+2x Dynamixel XL430 motors (and any necessary cables, boards, power supplies, and USB adapters to get these working for your system)
+1x Carbon Fiber 5mm-OD square tube: https://www.hobbytown.com/midwest-carbon-fiber-square-tube-.196-od-x-.118-id-x-40-mid5854/p28823
+(And any screws necessary for the build. I happened to have what I needed on hand, so I didn't keep track of exactly what I used. I'd recommend picking up one of the assortment kits of various M3 and M5 metal screws.
+
+
+Let me know if you have any questions. I don't know how many adjustments or changes I'd be willing my make to the model, as it suits my needs in the current form, but if you have any feel free to submit a pull request and we can change it!
