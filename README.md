@@ -49,26 +49,26 @@ For laser cutting, a Full Spectrum Laser 20x12 Hobby lasercutter was used with R
 ### Building
 
 To build the manipulator you need to lasercut the following files in 3mm wood
-2x BasePlateVector.dxf
-2x BaseSupportVector.dxf
-2x PitchPlateVector.dxf
-2x PitchSupportVector.dxf
-2x YawPlateVector.dxf
-2x YawSupportVector.dxf
-2x Platform1Vector.dxf
-2x Platform2Vector.dxf
+* 2x BasePlateVector.dxf
+* 2x BaseSupportVector.dxf
+* 2x PitchPlateVector.dxf
+* 2x PitchSupportVector.dxf
+* 2x YawPlateVector.dxf
+* 2x YawSupportVector.dxf
+* 2x Platform1Vector.dxf
+* 2x Platform2Vector.dxf
 
 The following pieces should be 3D printed
-1x CameraSupport.stl
-1x CarbonFiberMotorMount.stl
-14x Standoff.stl
-7x Nut.stl (optional)
+* 1x CameraSupport.stl
+* 1x CarbonFiberMotorMount.stl
+* 14x Standoff.stl
+* 7x Nut.stl (optional)
 
 The following pieces should be purchased
-1x Realsense D4xx Camera
-2x Dynamixel XL430 motors (and any necessary cables, boards, power supplies, and USB adapters to get these working for your system)
-1x Carbon Fiber 5mm-OD square tube: https://www.hobbytown.com/midwest-carbon-fiber-square-tube-.196-od-x-.118-id-x-40-mid5854/p28823
-(And any screws necessary for the build. I happened to have what I needed on hand, so I didn't keep track of exactly what I used. I'd recommend picking up one of the assortment kits of various M3 and M5 metal screws.
+* 1x Realsense D4xx Camera
+* 2x Dynamixel XL430 motors (and any necessary cables, boards, power supplies, and USB adapters to get these working for your system)
+* 1x Carbon Fiber 5mm-OD square tube: https://www.hobbytown.com/midwest-carbon-fiber-square-tube-.196-od-x-.118-id-x-40-mid5854/p28823
+* Any screws necessary for the build. I happened to have what I needed on hand, so I didn't keep track of exactly what I used. I'd recommend picking up one of the assortment kits of various M3 and M5 metal screws.
 
 
 Let me know if you have any questions. I don't know how many adjustments or changes I'd be willing my make to the model, as it suits my needs in the current form, but if you have any feel free to submit a pull request and we can change it!
