@@ -1,6 +1,8 @@
 # PCLManipulator
 An open design for a 2DoF manipulator for 3D point cloud scanning
 
+![PCLManipulator](/arm.png)
+
 This design was created for my PhD research in 3D Point Cloud Analysis. Fusion 360 was used to create a parameterized model capable of many changes. This manipulator can be fully constructed of 3D printed pieces (any plastic will be fine), lasercut wood (3mm baltic birch, in my case), a carbon fiber tube (found at a local hobby shop), 2 Dynamixel XL430 motors, a Realsense D4xx camera, and simple mechanical screws.
 
 A camera in space, for the purposes of observing an object, would need 6DoF (3 for pose, 3 for orientation). For this project, 6DoF would be an unnecesary amount of time, labor, and data. By making the rule that the camera will always face a central origin of the object, we immediately eliminate 3Dof. We can eliminate another by converting to spherical coordinates and constraining the camera to always be a specific distance away from the object. In this final 2DoF representation, we can call the two axes Yaw and Pitch.
